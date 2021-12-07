@@ -42,10 +42,12 @@ header > p {
 }
 a {
     color: white;
+     text-decoration: none;
 
 }
 a:hover {
     text-decoration: underline;
+    color: blue;
 }
 
 section.normal {
@@ -68,6 +70,7 @@ section.imagem > p {
     background-color: rgba(0, 0, 0, 0.308);
            width: 400px;
            display: inline-block;
+           text-shadow: 1px 1px 0px black;
 
            
 
@@ -76,15 +79,24 @@ section.imagem > p {
 section.imagem {
     background-color: rgba(0, 0, 0, 0.562);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-size: cover;
+    background-attachment: fixed;
+
+    
+
 }
 
 section#img01{
-    background-position: left center;
-    background-image:
+    background-image:url('../imagens/images.jpg')
+
+    
 
 }
 
 section#img02{
+    background-image: url('../imagens/istockphoto-506436992-1024x1024.jpg');
+
     
 }
 
