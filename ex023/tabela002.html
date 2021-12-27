@@ -12,7 +12,7 @@
 
       table{
           width: 500px;
-
+          position: relative;
 
       }
 
@@ -25,6 +25,23 @@
           background-color: gray;
           color: white;
       }
+      thead > tr > th {
+          position: sticky;
+          top: 0;
+          background-color: gray ;
+          
+      }
+       caption {
+           font-size: 1.5em;
+           font-weight: bold;
+           padding: 9px;
+           background-color: lightgreen;
+       }
+       tbody > tr:nth-child(odd){
+         background-color: lightgrey;
+         /* odd = impar
+         even = par */
+       }
 
 
     </style>
@@ -35,10 +52,15 @@
 
     
     <table>
+        <caption>
+            População das Unidades Federativas
+        </caption>
+
+        
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col" >Estado</th>
+                <th scope="col" style="width: 85px;" >População</th>
 
             </tr>
         </thead>
@@ -163,7 +185,7 @@
 
         <tfoot>
             <tr>
-                <th>Total de habitantes</th>
+                <th scope="row" >Total de habitantes</th>
                 <td>2 646 635 069</td>
             </tr>
 
